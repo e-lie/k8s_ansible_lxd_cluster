@@ -1,0 +1,13 @@
+# - name: switch to legacy iptable network tooling
+#   become: yes
+#   shell: update-alternatives --set iptables /usr/sbin/iptables-legacy
+#     # update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+#     # update-alternatives --set arptables /usr/sbin/arptables-legacy
+#     # update-alternatives --set ebtables /usr/sbin/ebtables-legacy
+     
+
+- name: Install last version of kubeadm for further cluster installation
+  apt:
+    name: kubeadm
+    state: latest
+    update_cache: yes

@@ -13,7 +13,7 @@
         profiles: ["default"]
         config:
           security.nesting: 'true' 
-          security.privileged: 'false' 
+          security.privileged: 'true' 
         devices:
           # configure network interface
           eth0:
@@ -24,7 +24,7 @@
             ipv4.address: "{{ hostvars[item].ansible_host }}"
 
         # uncomment if you installed lxd using snap
-        url: unix:/var/snap/lxd/common/lxd/unix.socket
+        # url: unix:/var/snap/lxd/common/lxd/unix.socket
         wait_for_ipv4_addresses: true
         timeout: 600
 

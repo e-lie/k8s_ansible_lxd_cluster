@@ -1,4 +1,6 @@
-- name: geerlingguy.security
-- name: geerlingguy.swap
+# - name: geerlingguy.security
+# - name: geerlingguy.swap
 - name: geerlingguy.docker
-- name: geerlingguy.kubernetes
+# - name: geerlingguy.kubernetes
+- name: e-lie.kubernetes
+  src: https://github.com/e-lie/ansible-role-kubernetes
