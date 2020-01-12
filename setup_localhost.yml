@@ -1,0 +1,8 @@
+- hosts: localhost
+  become: yes
+  vars:
+    docker_install_compose: no
+    docker_users:
+      - elk-master
+  roles:
+    - geerlingguy.docker

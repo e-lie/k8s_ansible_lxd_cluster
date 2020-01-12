@@ -27,5 +27,5 @@
     # - geerlingguy.security
     # - geerlingguy.swap
     # - geerlingguy.docker
-    - geerlingguy.kubernetes
+    - e-lie.kubernetes
     # - myk8s
